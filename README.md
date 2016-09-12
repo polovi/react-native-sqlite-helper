@@ -1,7 +1,6 @@
 # react-native-sqlite-helper
 
-Open database helper for [andpor/react-native-sqlite-storage](https://github.com/andpor/react-native-sqlite-storage) based on android SQLiteOpenHelper
-
+Promisify [andpor/react-native-sqlite-storage](https://github.com/andpor/react-native-sqlite-storage)
 
 MyDBHelper.js
 ```javascript
@@ -21,7 +20,7 @@ class MyDbHelper extends SQLiteOpenHelper {
   }
 
   onDowngrade(db, oldVersion, newVersion) {
-    console.log("upgrade");
+    console.log("downgrade");
   }
 }
 
